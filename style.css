@@ -1,0 +1,164 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+body > main > section.q{
+    color: black;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color:#ffffff;
+    
+    
+    
+} header .titre h1{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+header .navbar ul{
+    display: flex;
+   float: right;
+   margin-top: 20px;
+   margin-right: 15px;
+   color: #000;
+    
+}
+header .navbar ul li a{
+    font-size: 1.1rem;
+    margin-right: 30px;
+    
+}
+
+header .navbar ul li a:hover{
+    border-bottom: 4px solid red;
+}
+
+header  .navbar ul  li .active{
+    border-bottom: 4px solid red;
+}
+
+ main .introduction{
+    background:url(images/Bg_banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position:center ;
+    color:black;
+    position: relative;
+    text-transform:lowercase;
+    
+}
+/* main .introduction h2,  mai{
+    margin-top: 30px;
+} */
+ main .introduction h2, main .introduction p,main .introduction button{
+    color:black;
+    margin-left: 30px;
+    position: relative;
+    top:200px;
+    
+    
+ }
+ main .introduction h2{
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+ }
+ main .introduction button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(221, 53, 53);
+    color:white;
+ }
+ main .q{
+    color:black;
+ }
+ main h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: left;
+    color:black;
+ }
+ body > main > section.q > div > div > div.image > img{
+     width: 100wh;
+    height: 35vh; 
+} 
+.produit1{
+    box-shadow: 0px 0px 10px gray;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 15px 15px;
+    color:black;
+}
+main .q .produits .produit1 .marque,main .q .produits .produit1 .nom-modele, main .q .produits .produit1 .prix-buy{
+    margin-left: 20px;
+    padding: 5px;
+    color:black;
+}
+main .q .produits .produit1 .prix-buy{
+    margin-bottom: 20px;
+    color:black;
+}
+main .q .produits .produit1 .details{
+    background-color: rgb(201, 190, 190);
+    height: 150px;
+}
+main .q .produits .produit1 .prix-buy{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 10px;
+}
+main .q .produits .produit1 .prix-buy .prix{
+    color: rgb(167, 4, 4);
+    font-weight: bold;
+    position: relative;
+    right:15px;
+
+}
+main .q .produits .produit1 .prix-buy .achat{
+    color:red;
+    border:2px solid black;
+    background-color: transparent;
+    padding:8px ;
+    border-radius:6px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+main .q .produits .produit1 .prix-buy .achat:hover{
+    background-color: red;
+    color:rgb(255, 255, 255);
+    border:1px solid transparent;
+}
+main .q .produits .produit1 .prix-buy button{
+    margin-bottom: 40px;
+}
+main .q .produits{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+}
+main{
+    color: #000;
+}
+body > main > section.q > div > div:nth-child(6) > div.details > div.prix-buy > span > span > button{
+    position: relative;
+    top: 24px;
+    left: 100px;
+}
+@media screen  and (max-width:400px){
+    main .q .produits{
+    display: grid;
+        grid-template-columns: repeat(1,2fr);
+    }
+}
